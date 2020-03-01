@@ -93,7 +93,8 @@ function App()
           return item.id == id ? { ...item, charge, amount }:item
         })
         setExpenses(tempList)
-      
+        setNotification({ show: true, type: "success", text: "Expense was edited" })
+        handleNotifcation()
         setEdit(false)
 
 
@@ -185,7 +186,7 @@ function App()
           Total spending :{" "}
             ${totalExpenses}
         </span>
-        <span className="total">Total Saving :{" "}${income> 0 ? income-totalExpenses: 0}  </span>
+        <span className="total">Total Saving :{" "}${income > 0 &&  income>=totalExpenses ? income-totalExpenses: 0}  </span>
        
       </div>
    
