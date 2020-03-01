@@ -1,2 +1,2 @@
 # budgetApp
-Budget App bootstrapped with create-react-app tool , use of react-hooks
+Budget App is a react app bootstrapped with create-react-app tool , use of react-hooks
